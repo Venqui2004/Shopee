@@ -1,0 +1,139 @@
+:root
+{
+    --primary-color : rgb(238, 75, 43);
+    --primary-color-rgba : rgba(238, 76, 43, 0.1);
+    --height-nav : 30px;
+    --height-header : 120px;
+    --height-search: calc( var(--height-header ) - var(--height-nav));
+}
+*
+{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid
+{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full__width
+{
+    width: 100%;
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+}
+
+.col-10-2
+{
+    width: 20%;
+    padding: 0 5px;
+}
+
+.col-10
+{
+    width: calc(100% / 12 * 10);
+    padding: 0 5px;
+}
+
+.col-2
+{
+    width: calc(100% / 6);
+    padding: 0 5px;
+}
+
+
+.heightline
+{
+    border: 0.5px #00000018 solid;
+    box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.093);
+}
+
+.btn--with-icon
+{
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: #6b26ac;
+}
+
+.btn--with-icon .btn--with-icon__content
+{
+    padding: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.btn--with-icon .btn--with-icon__content > .icon 
+{
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+}
+
+.btn--with-icon .btn--with-icon__content > p
+{
+    font-size: 13px;
+    color: white;
+    height: fit-content;
+    padding: 0 26px;
+}
+
+.btn
+{
+    padding: 8px 32px;
+    font-size: 13px;
+    border-radius: 3px;  
+}
+
+.btn:hover 
+{
+    background-color: var(--primary-color-rgba);
+    cursor: pointer;
+}
+
+.btn--primary
+{
+    padding: 8px 32px;
+    font-size: 13px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.btn--primary:hover 
+{
+    opacity: 0.7;
+}
+
+.form__SignUp
+{
+    display: block;
+}
+
+.form__Login
+{
+    display: none;
+}
+
+.modal
+{
+    display: none !important;
+}
+
